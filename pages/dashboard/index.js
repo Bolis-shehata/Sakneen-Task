@@ -1,4 +1,4 @@
-import Link from "next/Link"
+// import Link from "next/Link"
 import Head  from "next/head"
 import Table from "../../Components/Table"
 import style from "../../styles/dashboard.module.css"
@@ -93,7 +93,7 @@ export default function dashboard(props) {
         </Head>
         {console.log("render")}
         <span className={style.dash}>Dashboard</span>
-        <div className={style.nav}> <Link style={{"margin_right":"10px"}} href={`/`} >Home</Link>   &gt;  Dashboard</div>
+        {/* <div className={style.nav}> <Link style={{"margin_right":"10px"}} href={`/`} >Home</Link>   &gt;  Dashboard</div> */}
         <form className={style.form}>
             <label onClick={show}  >Filters by ID:</label>
             <input type={"number"} placeholder={"ex:45785"}  id="search" className={style.search}/>
