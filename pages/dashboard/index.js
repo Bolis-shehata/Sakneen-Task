@@ -135,7 +135,7 @@ export default function dashboard(props) {
 
 
 export async function getStaticProps(){
-    const res = await fetch("http://localhost:3000/api/placesAPI");
+    const res = await fetch("https://sakneentask.vercel.app/api/placesAPI");
     const allData=await res.json();
 
     return{
